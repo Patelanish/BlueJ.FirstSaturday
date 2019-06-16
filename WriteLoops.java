@@ -20,6 +20,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 1 to 10.
             // calling
+            for(int i = 1; i <10; i++)
             w = w + 1;
             // each time through the loop
 
@@ -32,6 +33,7 @@ public class WriteLoops {
 
         // Write a FOR loop that counts from 1 to 10.
         // calling
+        for(int i = 1; i <10; i++)
         w = w + 1;
         // each time through the loop
         
@@ -43,6 +45,7 @@ public class WriteLoops {
 
         // Write a FOR loop that makes 10 iterations, start at 21.
         // calling
+        for(int i=21; i <32; i++)
         w = w + 1;
         // each time through the loop
         
@@ -54,7 +57,9 @@ public class WriteLoops {
 
         // Write a FOR loop that counts down from 100 to 0.
         // calling
+        for (int i = 100; i > 0; i--) {
         w = w + 1;
+    }
         // each time through the loop
         
         return w;
@@ -66,6 +71,9 @@ public class WriteLoops {
         // Write a FOR loop from 0 to 32 by 2s.
         // calling
         w = w + 1;
+        for(int i=2; i<=32; i=i+2){
+            w = w + 1;
+        }
         // each time through the loop
         return w;
     }
@@ -75,7 +83,9 @@ public class WriteLoops {
 
         // Write a FOR loop from 1 to less than 5001 by 11s.
         // calling
+        for(int i =1; i <5001; i+=11){
         w = w + 1;
+        }
         // each time through the loop
         
         return w;
@@ -86,8 +96,14 @@ public class WriteLoops {
 
         // Write a nested FOR loop(s), where one counts from
         // 0 to less than 20 and the inner one counts from 0 to 4
+        for (int i = 0; i < 20; i++) {
+            for (int c = 0; c <= 4; c++){
+                System.out.println(i);
+                System.out.println(c);
                 // calling
                 w = w + 1;
+            }
+        }
                 // each time through the inner loop
 
         return w;
